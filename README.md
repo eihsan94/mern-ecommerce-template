@@ -4,7 +4,7 @@
 
 This is the course project for my [MERN eCommerce From Scratch](https://www.udemy.com/course/mern-ecommerce) course
 
-![screenshot](https://github.com/bradtraversy/proshop_mern/blob/master/uploads/Screen%20Shot%202020-09-29%20at%205.50.52%20PM.png)
+![screenshot](./readme_photos/app-page.png)
 
 ## Features
 
@@ -46,6 +46,30 @@ MONGO_URI = your mongodb uri
 JWT_SECRET = 'abc123'
 PAYPAL_CLIENT_ID = your paypal client id
 ```
+
+for example
+```bash
+NODE_ENV = development
+PORT = 5000
+#  replace the password and the dbname with the mongodb password and dbname
+MONGO_URI = (for example mongodb+srv://root:<password>@cluster0.ovac6.mongodb.net/<dbname>?retryWrites=true&w=majority)
+JWT_SECRET = 'abc123'
+PAYPAL_CLIENT_ID = your paypal client id
+```
+### THE INFRA
+- ***Node***
+    - The server (Business logic etc)
+- ***MongoDb***
+    - The nosql Db that is used for the app
+    - In this project i am using https://cloud.mongodb.com/v2/5faf786e14aec91b735a68c7#clusters
+    - The dbName is photoshop_mern
+    - The password is root
+- ***PayPal***
+    - The payment system that we use for this app
+    - In this project i am using this paypal sandbox https://developer.paypal.com/developer/applications/edit/SB:QVVBNnFEZFZlZm9tX1ZQRG9VRV9Sb3ZYUUFhczE3Uk02bDZ4b1pwSGVTbFd5bjk5MzVCSzlPQmZldFhHbWZxUEs1Z0xRVnBFeXVJNWlLNjQ=
+    - the sandbox name proshop-mern
+    - the client id AUA6qDdVefom_VPDoUE_RovXQAas17RM6l6xoZpHeSlWyn9935BK9OBfetXGmfqPK5gLQVpEyuI5iK64
+    
 
 ### Install Dependencies (frontend & backend)
 
@@ -105,22 +129,7 @@ jane@example.com (Customer)
 
 The MIT License
 
-Copyright (c) 2020 Traversy Media https://traversymedia.com
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Copyright (c) 2020 TeamYaa https://teamyaa.com
 
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
