@@ -99,6 +99,24 @@ npm run build
 
 There is a Heroku postbuild script, so if you push to Heroku, no need to build manually for deployment to Heroku
 
+1. open heroku 
+2. make new app
+3. connect this repo with heroku new app
+4. in heroku cli type below
+```bash
+    #connect heroku
+    heroku login
+    # set the node env to prod
+    heroku config:set NODE_ENV=production  --app mern-ecommerce-template
+    # set the mongo db url 
+    heroku config:set MONGO_URI=mongodb url  --app mern-ecommerce-template
+    # set the jwt secret
+    heroku config:set JWT_SECRET='abc123'  --app mern-ecommerce-template
+    # set the paypal client id
+    heroku config:set PAYPAL_CLIENT_ID==paypal client id  --app mern-ecommerce-template
+    # see the log if u want 
+    heroku logs --app mern-ecommerce-template
+```
 ### Seed Database
 
 You can use the following commands to seed the database with some sample users and products as well as destroy all data
